@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.3/css/swiper.css">
+	<style>
+		body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #d7dbe2;
+}
+
+.slideshow {
+  display: flex;
+  height: 80vh;
+  width: 80vw;
+  max-width: 1240px;
+  min-height: 400px;
+  max-height: 700px;
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+}
+.slideshow__gallery {
+  height: 100%;
+  width: calc(80% - 20px);
+  margin-right: 20px;
+}
+.slideshow__gallery-wrap {
+  will-change: transform;
+  transition-timing-function: cubic-bezier(0, 0, 0.3, 0.98);
+  transform: translate3d(0, 0, 0);
+}
+.slideshow__gallery-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 32px;
+  color: #fff;
+  letter-spacing: 3.2px;
+  transform: translate3d(0, 0, 0);
+  will-change: font-size;
+  transition: font-size .3s ease;
+}
+.slideshow__gallery-slide.active {
+  font-size: 36px;
+}
+.slideshow__thumbs {
+  height: 100%;
+  width: 20%;
+}
+.slideshow__thumbs-wrap {
+  will-change: transform;
+  transition-timing-function: cubic-bezier(0, 0, 0.3, 0.98);
+  transform: translate3d(0, 0, 0);
+}
+.slideshow__thumbs-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #fff;
+  letter-spacing: 2px;
+  will-change: font-size;
+  transition: font-size .3s ease;
+}
+.slideshow__thumbs-slide.active {
+  font-size: 26px;
+}
+
+	</style>
+</head>
+<body>
+	<div class="slideshow">
+  
+    <div class="slideshow__gallery swiper-container js-gallery">
+        <div class="slideshow__gallery-wrap swiper-wrapper">
+          
+          <div class="slideshow__gallery-slide swiper-slide" style="background-color: #0a68a3">Slide 1</div>
+          <div class="slideshow__gallery-slide swiper-slide" style="background-color: #bd56ac">Slide 2</div>
+          <div class="slideshow__gallery-slide swiper-slide" style="background-color: #b0cc66">Slide 3</div>
+          <div class="slideshow__gallery-slide swiper-slide" style="background-color: lightcoral">Slide 4</div>
+          <div class="slideshow__gallery-slide swiper-slide" style="background-color: #5fbf7c">Slide 5</div>
+
+          
+          <div class="slideshow__gallery-slide swiper-slide" style="background-color: #4298ce">Slide 1</div>
+          <div class="slideshow__gallery-slide swiper-slide" style="background-color: #bd56ac">Slide 2</div>
+          <div class="slideshow__gallery-slide swiper-slide" style="background-color: #b0cc66">Slide 3</div>
+          <div class="slideshow__gallery-slide swiper-slide" style="background-color: lightcoral">Slide 4</div>
+          <div class="slideshow__gallery-slide swiper-slide" style="background-color: #5fbf7c">Slide 5</div>
+          
+          
+          <div class="slideshow__gallery-slide swiper-slide" style="background-color: #4298ce">Slide 1</div>
+          <div class="slideshow__gallery-slide swiper-slide" style="background-color: #bd56ac">Slide 2</div>
+          <div class="slideshow__gallery-slide swiper-slide" style="background-color: #b0cc66">Slide 3</div>
+          <div class="slideshow__gallery-slide swiper-slide" style="background-color: lightcoral">Slide 4</div>
+          <div class="slideshow__gallery-slide swiper-slide" style="background-color: #5fbf7c">Slide 5</div>
+        
+        </div>
+    </div>
+
+    <div class="slideshow__thumbs swiper-container js-thumbs">
+      <div class="slideshow__thumbs-wrap swiper-wrapper">
+                  
+        <div class="slideshow__thumbs-slide swiper-slide" style="background-color: #4298ce">Slide 1</div>
+        <div class="slideshow__thumbs-slide swiper-slide" style="background-color: #bd56ac">Slide 2</div>
+        <div class="slideshow__thumbs-slide swiper-slide" style="background-color: #b0cc66">Slide 3</div>
+        <div class="slideshow__thumbs-slide swiper-slide" style="background-color: lightcoral">Slide 4</div>
+        <div class="slideshow__thumbs-slide swiper-slide" style="background-color: #5fbf7c">Slide 5</div>
+
+
+        <div class="slideshow__thumbs-slide swiper-slide" style="background-color: #4298ce">Slide 1</div>
+        <div class="slideshow__thumbs-slide swiper-slide" style="background-color: #bd56ac">Slide 2</div>
+        <div class="slideshow__thumbs-slide swiper-slide" style="background-color: #b0cc66">Slide 3</div>
+        <div class="slideshow__thumbs-slide swiper-slide" style="background-color: lightcoral">Slide 4</div>
+        <div class="slideshow__thumbs-slide swiper-slide" style="background-color: #5fbf7c">Slide 5</div>
+
+
+        <div class="slideshow__thumbs-slide swiper-slide" style="background-color: #4298ce">Slide 1</div>
+        <div class="slideshow__thumbs-slide swiper-slide" style="background-color: #bd56ac">Slide 2</div>
+        <div class="slideshow__thumbs-slide swiper-slide" style="background-color: #b0cc66">Slide 3</div>
+        <div class="slideshow__thumbs-slide swiper-slide" style="background-color: lightcoral">Slide 4</div>
+        <div class="slideshow__thumbs-slide swiper-slide" style="background-color: #5fbf7c">Slide 5</div>
+
+      </div>
+  </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.3/js/swiper.min.js"></script>
+
+
+<script>
+	const $gallery = $('.js-gallery');
+	const $thumbs = $('.js-thumbs');
+	const slideNumber = $gallery.find('.swiper-slide').length / 3;
+	const slidesPerView = 3;
+	let targetIndex;
+
+	const activeSlideClass = 'active';
+	let $thumbsActiveSlide;
+	let $galleryActiveSlide;
+
+
+	let swiperGallery = new Swiper($gallery, {
+	  direction: 'vertical',
+	  loop: true,
+	  loopAdditionalSlides: 0,
+	  initialSlide: slideNumber,
+	  speed: 700,
+	  simulateTouch: false,
+	  spaceBetween: 20 });
+
+
+	let swiperThumbs = new Swiper($thumbs, {
+	  direction: 'vertical',
+	  loop: true,
+	  loopAdditionalSlides: 0,
+	  slidesPerView: slidesPerView,
+	  initialSlide: slideNumber,
+	  centeredSlides: true,
+	  slideToClickedSlide: true,
+	  speed: 500,
+	  spaceBetween: 20 });
+
+
+	//add custom active class for smooth animation
+	$thumbsActiveSlide = $(swiperThumbs.slides).filter('.swiper-slide-active');
+	$galleryActiveSlide = $(swiperGallery.slides).filter('.swiper-slide-active');
+	$thumbsActiveSlide.addClass(activeSlideClass);
+	$galleryActiveSlide.addClass(activeSlideClass);
+	//---------------------------------------------
+
+
+	swiperThumbs.on("slideChangeTransitionStart", function () {
+	  //add custom active class for smooth animation
+	  $thumbsActiveSlide = $(swiperThumbs.slides).filter('.swiper-slide-active');
+	  $thumbsActiveSlide.siblings().removeClass(activeSlideClass);
+	  //---------------------------------------------
+
+	  targetIndex = Number(swiperThumbs.realIndex);
+	  swiperThumbs.detachEvents();
+	  swiperGallery.slideTo(targetIndex + 1, 700, true);
+	});
+
+	// swiperThumbs.on("slideChangeTransitionEnd", function () {
+	//   swiperThumbs.attachEvents();
+	// });
+
+	swiperGallery.on("slideChangeTransitionStart", function () {
+	  //add custom active class for smooth animation
+	  $galleryActiveSlide = $(swiperGallery.slides).filter('.swiper-slide-active');
+	  $galleryActiveSlide.siblings().removeClass(activeSlideClass);
+	  //---------------------------------------------
+	});
+
+	swiperGallery.on("slideChangeTransitionEnd", function () {
+	  if (targetIndex < slideNumber) {
+	    targetIndex += slideNumber;
+	    teleportTo(targetIndex);
+	  } else if (targetIndex >= slideNumber * 2) {
+	    targetIndex -= slideNumber;
+	    teleportTo(targetIndex);
+	  } else {
+	    //add custom active class for smooth animation
+	    $thumbsActiveSlide.addClass(activeSlideClass);
+	    $galleryActiveSlide.addClass(activeSlideClass);
+	    //---------------------------------------------
+	  }
+	  swiperThumbs.attachEvents();
+	});
+
+	function teleportTo(slideIndex) {
+	  swiperThumbs.slideTo(slideIndex + slidesPerView, 0, false);
+	  swiperGallery.slideTo(slideIndex + 1, 0, false);
+
+	  //add custom active class for smooth animation
+	  $thumbsActiveSlide = $(swiperThumbs.slides).filter('.swiper-slide-active');
+	  $galleryActiveSlide = $(swiperGallery.slides).filter('.swiper-slide-active');
+	  $thumbsActiveSlide.addClass(activeSlideClass);
+	  $galleryActiveSlide.addClass(activeSlideClass);
+	  //---------------------------------------------
+	}
+
+	//If u have images with lazy add this after swipers init
+	function fixLazy() {
+	  let gallerylastIndex = slideNumber * 2;
+	  let thumbslastIndex = slideNumber * 2 + slidesPerView - 1;
+	  let $lastGallerySlide = $(swiperGallery.slides[gallerylastIndex]).find('.swiper-lazy');
+	  let $lastThumbsSlide = $(swiperThumbs.slides[thumbslastIndex]).find('.swiper-lazy');
+
+	  removeLazySlide($lastGallerySlide);
+	  removeLazySlide($lastThumbsSlide);
+
+	  let counter;
+
+	  if ((slidesPerView - 1) % 2 !== 0) {
+	    counter = Math.floor((slidesPerView - 1) / 2) + 1;
+	  } else {
+	    counter = (slidesPerView - 1) / 2;
+	  }
+
+	  for (let i = 0; i < counter; i++) {if (window.CP.shouldStopExecution(0)) break;
+
+	    let $prevSlide = $(swiperThumbs.slides[thumbslastIndex - (i + 1)]).find('.swiper-lazy');
+	    let $nextSlide = $(swiperThumbs.slides[thumbslastIndex + (i + 1)]).find('.swiper-lazy');
+
+	    removeLazySlide($prevSlide);
+	    removeLazySlide($nextSlide);
+	  }window.CP.exitedLoop(0);
+	}
+
+	function removeLazySlide($slide) {
+	  let data = $slide.data('background');
+	  $slide.attr('style', `background-image: url('${data}')`);
+	  $slide.removeAttr('data-background');
+	  $slide.addClass('swiper-lazy-loaded');
+	  $slide.empty();
+	}
+</script>
+</body>
+</html>
